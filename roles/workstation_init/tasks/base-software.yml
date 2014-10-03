@@ -1,0 +1,29 @@
+---
+
+- name: Install common workstation tools.
+  apt: name={{ item }} state=latest
+  with_items:
+   - terminator
+   - sublime-text
+   - git
+   - hexchat
+   - thunderbird
+   - firefox
+   - bash
+   - openssl
+   - python-openssl
+   - gparted
+
+
+- name: Install java jre 7
+  apt: name={{ item }} state=latest
+  with_items:
+   - openjdk-7-jre
+
+- name: Install xscreensavers
+  apt: name={{ item }} state=latest
+  with_items:
+   - xscreensaver-gl
+   - xscreensaver-gl-extra
+   - xscreensaver-screensaver-bsod
+   - xscreensaver-screensaver-dizzy

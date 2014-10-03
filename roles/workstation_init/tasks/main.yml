@@ -1,0 +1,3 @@
+---
+  - include: aptupdate.yml
+  - include: base-software.yml

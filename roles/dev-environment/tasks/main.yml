@@ -1,0 +1,7 @@
+---
+- include: git.yml
+- include: ruby.yml
+- include: virtualbox.yml
+- include: vagrant.yml
+- include: kvm.yml
+- include: buildessential.yml

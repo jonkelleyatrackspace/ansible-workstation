@@ -1,0 +1,11 @@
+---
+- name: Bootstrap common environments
+  hosts: 127.0.0.1
+  connection: local
+  sudo: yes
+
+  roles:
+      - workstation_init
+      - bash
+      - dev-environment
+      - vim

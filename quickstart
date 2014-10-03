@@ -1,0 +1,1 @@
+ansible-playbook -i hosts.example site.yml -K

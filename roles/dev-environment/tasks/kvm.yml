@@ -1,0 +1,13 @@
+---
+
+- name: Install kvm virtualization support
+  apt: name={{ item }} state=latest
+  with_items:
+   - qemu-system
+   - qemu-utils
+   - libvirt-bin
+   - virt-manager
+   - python-spice-client-gtk
+   - virt-viewer
+
+- debug: msg="You will have to reboot for virt-manager to be able to start."
